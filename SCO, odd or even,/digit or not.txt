@@ -1,0 +1,18 @@
+%option noyywrap
+%{
+#include<stdio.h>
+%}
+digit [0-9]
+letter [a-zA-Z]
+%%
+{digit}+ {printf("%s is digit",yytext);}
+{letter}* {printf("%s is identifier",yytext);}
+. ;
+%%
+int main()
+{
+printf("Enter the Input");
+yylex();
+printf("end");
+return 0;
+}
