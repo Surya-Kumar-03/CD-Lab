@@ -1,4 +1,6 @@
+#include<stdio.h>
 #include <string.h>
+
 int countbit1(int n)
 {
     int bits = 0, i = 0;
