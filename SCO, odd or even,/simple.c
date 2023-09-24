@@ -1,5 +1,5 @@
 #include <string.h>
-int countbit1(unsigned int n)
+int countbit1(int n)
 {
     int bits = 0, i = 0;
     while (n != 0)
@@ -12,7 +12,7 @@ int countbit1(unsigned int n)
     printf("\n no of iterations %d", i);
     return bits;
 }
-int countbit2(unsigned int n)
+int countbit2(int n)
 {
     int bits = 0, i = 0;
     while (n != 0)
